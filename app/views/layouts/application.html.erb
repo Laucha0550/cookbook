@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cookbook</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= link_to "Autor", authors_path %>
+    <%= link_to "Categoria", categories_path %>
+    <%= link_to "Tipo de receta", recipe_types_path %>
+    <%= link_to "Recetas", recipes_path %>
+    <%= yield %>
+  </body>
+</html>
